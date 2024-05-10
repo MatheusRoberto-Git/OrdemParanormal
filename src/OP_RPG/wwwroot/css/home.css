@@ -1,0 +1,38 @@
+﻿.centerIndex {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxCenter {
+    display: flex;    
+    align-items: center;
+    margin-top: 55px;
+    width: 98vw;
+    height: 85vh;
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.imgLateral {
+    margin: 15px;
+    width: 20vw;
+    height: 75vh;
+    border: none;
+    border-radius: 20px;
+}
+
+    .imgLateral img {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+    }
+
+.telaBoasVindas {
+    width: 74vw;
+    height: 75vh;
+    border: none;
+    border-radius: 20px;    
+}

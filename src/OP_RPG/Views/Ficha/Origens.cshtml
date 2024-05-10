@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Ordem Paranormal - Origem";
+}
+
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<div class="centerOrigem">
+    <div class="newOrigem">
+        <div class="txtOrigem">
+            <p class="txtDescRegra">
+                O que seu personagem fazia antes de se envolver com o paranormal? A origem representa como o
+                seu passado influencia no seu presente. Escolha uma origem que se encaixe com o conceito de seu personagem.
+            </p>
+        </div>
+        <div class="alignDdlBtn">
+            @Html.DropDownList("OrigemID", ViewBag.ddlOrigem as SelectList, "Selecione uma origem", new { @class = "ddlOrigem", onchange = "getDescricaoOrigem()" })
+            <a asp-controller="Ficha" asp-action="Classes" class="btnSubmit">Ok</a>
+        </div>
+        <div class="alignLado">
+            <div class="alignOrigemDesc">
+                <h5 class="titleBox">Descrição Origem:</h5>
+                <p class="txtDescOrigem" id="descOrigem">
+                    @ViewData["DescOrigem"]
+                </p>
+            </div>
+            <div class="alignOrigemDesc">
+                <h5 class="titleBox">Pericias Treinadas:</h5>
+                <p class="txtDescOrigem" id="descPericias">
+                    @ViewData["Pericia_1"]
+                    @ViewData["Pericia_2"]
+                </p>
+            </div>
+            <div class="alignOrigemDesc">
+                <h5 class="titleBox">Poder de Origem:</h5>
+                <p class="txtDescOrigem" id="descPoderOrigem">
+                    @ViewData["nomePoder"]
+                    @ViewData["descPoder"]
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="~/css/origem.css" asp-append-version="true" />

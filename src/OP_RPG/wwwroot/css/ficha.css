@@ -1,0 +1,27 @@
+﻿.centerFichas{
+    min-height: 100vh;
+    display: flex;    
+}
+
+.newFichas {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    width: 100vw;
+    height: 10vh;
+    border: none;    
+}
+
+.btnNewPerson {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 155px;
+    margin-left: 25px;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}

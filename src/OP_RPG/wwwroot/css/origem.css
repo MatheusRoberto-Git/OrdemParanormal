@@ -1,0 +1,111 @@
+﻿.centerOrigem {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.newOrigem {
+    align-items: center;
+    margin: auto;
+    width: 60vw;
+    height: 80vh;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+}
+
+.txtOrigem {
+    align-content: center;
+    margin: 10px auto 5px;
+    width: 58vw;
+    height: 12vh;
+    background-color: transparent;
+}
+
+.txtDescRegra {
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.alignDdlBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 60vw;
+    height: 40px;
+    background-color: transparent;
+}
+
+.ddlOrigem {
+    margin-right: 5px;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+    .ddlOrigem option {
+        background-color: rgba(20, 20, 20, 0.897);        
+        color: White; 
+    }
+
+.btnSubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+}
+
+.alignLado {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 60vw;
+    height: 350px;
+    background-color: transparent;
+    border: none;
+}
+
+.titleBox {
+    margin-top: 5px;
+    font-size: 14px;
+    color: red;
+}
+
+.txtDescOrigem {
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+    .txtDescOrigem p {
+        margin: 0;
+    }
+
+.alignOrigemDesc {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5px auto;
+    width: 19vw;
+    height: 57vh;
+    background-color: rgb(0 0 0 / 70%);
+    border: 1px solid rgb(0 0 0 / 70%);
+    border-radius: 10px;
+}

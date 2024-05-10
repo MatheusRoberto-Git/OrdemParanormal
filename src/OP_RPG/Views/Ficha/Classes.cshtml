@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Ordem Paranormal - Classe";
+}
+
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<div class="centerClasse">
+    <div class="newClasse">
+        <div class="txtClasse">
+            <p class="txtDescRegra">
+                Sua classe indica o treinamento que você recebeu na Ordem para enfrentar os perigos do Outro Lado.
+                É a sua característica mais importante, pois define o que você faz e qual é o seu papel no grupo de investigadores.
+            </p>
+        </div>
+        <div class="alignDdlBtn">
+            @Html.DropDownList("ClasseID", ViewBag.ddlClasse as SelectList, "Selecione uma classe", new { @class = "ddlClasse", onchange = "getDescricaoClasse()" })            
+            <button class="btnPoder" id="mdlBtnPoder">Poder de Classe</button>
+            <a asp-controller="Ficha" asp-action="" class="btnSubmit">Ok</a>
+        </div>
+        <div class="alignLado">
+            <div class="alignClasseDesc">
+                <h5 class="titleBox">Descrição Classe:</h5>
+                <p class="txtDescClasse" id="descClasse">
+                    @ViewData["DescOrigem"]
+                </p>
+            </div>
+            <div class="alignClasseDesc">
+                <h5 class="titleBox">Características da Classe:</h5>
+                <p class="txtDescClasse" id="descCaracteristicaClasse">
+                    @ViewData["descPtVidaInicial"]
+                    @ViewData["descPtVidaNex"]
+                    @ViewData["descPtEsforcoInicial"]
+                    @ViewData["descPtEsforcoNex"]
+                    @ViewData["descSanInicial"]
+                    @ViewData["descSanidadeNex"]
+                    @ViewData["descPericiasTreinadas"]
+                    @ViewData["descProficiencias"]
+                </p>
+            </div>
+            <div class="alignClasseDesc">
+                <h5 class="titleBox">Pericias Treinadas:</h5>
+                <p class="txtDescClasse" id="descPericiasClasse">                    
+                    @ViewData["descPericiasTreinadas"]                    
+                </p>
+            </div>
+            <div class="alignClasseDesc">
+                <h5 class="titleBox">Proficiências:</h5>
+                <p class="txtDescClasse" id="descProficienciasClasse">
+                    @ViewData["descProficiencias"]
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modalPoder" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h5 class="titleModal">Habilidade de Classe:</h5>
+            <p class="txtDescHabilidadeClasse" id="descModalHablidade">
+                @ViewData["descHabilidadeClasseTitle"]
+                @ViewData["descHabilidadeClasse"]
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="~/css/classe.css" asp-append-version="true" />

@@ -1,0 +1,201 @@
+﻿.centerClasse {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.newClasse {
+    align-items: center;
+    margin: auto;
+    width: 85vw;
+    height: 80vh;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+}
+
+.txtClasse {
+    align-content: center;
+    margin: 10px auto 5px;
+    width: 58vw;
+    height: 12vh;
+    background-color: transparent;
+}
+
+.txtDescRegra {
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.alignDdlBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 60vw;
+    height: 40px;
+    background-color: transparent;
+}
+
+.ddlClasse {
+    margin-right: 5px;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+    .ddlClasse option {
+        background-color: rgba(20, 20, 20, 0.897);
+        color: White;
+    }
+
+.btnPoder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    width: 125px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+}
+
+.btnSubmit {
+    display: flex;
+    justify-content: center;
+    margin-right: 5px;
+    align-items: center;
+    width: 55px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+}
+
+.alignLado {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80vw;
+    height: 350px;
+    background-color: transparent;
+    border: none;
+}
+
+.titleBox {
+    margin-top: 5px;
+    font-size: 14px;
+    color: red;
+}
+
+.txtDescClasse {
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+    .txtDescClasse p {
+        margin: 0;
+    }
+
+.alignClasseDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5px auto;
+    width: 19vw;
+    height: 57vh;
+    background-color: rgb(0 0 0 / 70%);
+    border: 1px solid rgb(0 0 0 / 70%);
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+    .alignClasseDesc::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .alignClasseDesc::-webkit-scrollbar-track {
+        background-color: darkred;
+    }
+
+    .alignClasseDesc::-webkit-scrollbar-thumb {
+        background-color: red;
+        border-radius: 5px;
+    }
+
+/*Modal Poder Classe*/
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    text-align: end;
+}
+
+.modal-content {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid darkred;
+    max-width: 640px;
+    height: 290px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: ThreeDDarkShadow;
+    color: white;
+}
+
+.titleModal{
+    text-align: center;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -18px;
+    margin-right: -10px;
+}
+
+    .close:hover,
+    .close:focus {
+        color: darkred;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.txtDescHabilidadeClasse {
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+    .txtDescHabilidadeClasse p {
+        margin: 0;
+    }
+

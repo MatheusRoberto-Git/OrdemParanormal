@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' />
+</head>
+<body>
+    <header class="header">
+        <a asp-controller="Home" asp-action="Index" class="logo">
+            @* <img src="~/images/OP_LogoGif.gif" alt="Logo" width="60" height="50"> *@
+        </a>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+        <nav class="navBar">
+            <a asp-controller="Ficha" asp-action="Fichas" style="--i:0;">Fichas</a>
+            <a href="#" style="--i:1;">Agente</a>
+            <a href="#" style="--i:2;">Perícias</a>
+            <a href="#" style="--i:3;">Habilidades</a>
+            <a href="#" style="--i:4;">Rituais</a>
+            <a href="#" style="--i:5;">Inventário</a>
+            <partial name="_LoginPartial" />
+        </nav>
+    </header>
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/jsFichas.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
