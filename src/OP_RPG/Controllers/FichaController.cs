@@ -22,6 +22,12 @@ namespace OP_RPG.Controllers
         }
 
         [Authorize]
+        public IActionResult Atributos()
+        {
+            return View();
+        }
+
+        [Authorize]
         public async Task<IActionResult> Origens()
         {
             var origens = await _context.Origem.ToListAsync();

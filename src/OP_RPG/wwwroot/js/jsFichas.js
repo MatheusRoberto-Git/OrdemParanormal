@@ -18,7 +18,7 @@
             error: function () {
                 $("#descOrigem").text("Erro ao carregar a descrição.");
                 $("#descPericias").text("Erro ao carregar as pericias.");
-                $("#descPoderOrigem").text("Erro ao carregar o poder."); 
+                $("#descPoderOrigem").text("Erro ao carregar o poder.");
             }
         });
     } else {
@@ -45,7 +45,7 @@ function getDescricaoClasse() {
                 var descPericiasTreinadas = response.descPericiasTreinadas;
                 var descProficiencias = response.descProficiencias;
                 var descHabilidadeClasseTitle = response.descHabilidadeClasseTitle;
-                var descHabilidadeClasse = response.descHabilidadeClasse; 
+                var descHabilidadeClasse = response.descHabilidadeClasse;
 
                 $("#descClasse").text(descClasse);
 
@@ -55,7 +55,7 @@ function getDescricaoClasse() {
                     "<p>" + "PE Inicial: " + descPtEsforcoInicial + " + Presença" + "</p>" +
                     "<p>" + "PE (Novo NEX): " + descPtEsforcoNex + " + Presença" + "</p>" +
                     "<p>" + "Sanidade Inicial: " + descSanInicial + "</p>" +
-                    "<p>" + "Sanidade (Novo NEX): " + descSanidadeNex + "</p>"                    
+                    "<p>" + "Sanidade (Novo NEX): " + descSanidadeNex + "</p>"
                 );
 
                 $("#descPericiasClasse").html("<p>" + descPericiasTreinadas + "</p>");
@@ -72,12 +72,13 @@ function getDescricaoClasse() {
                 $("descModalHablidade").text("Erro ao carregar o poder.")
             }
         });
-    } else {
+    }
+    else {
         $("#descClasse").text("");
         $("#descCaracteristicaClasse").text("");
         $("#descPericiasClasse").text("");
         $("#descProficienciasClasse").text("");
-        $("descModalHablidade").text("")
+        $("descModalHablidade").text("");
     }
 }
 
